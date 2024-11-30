@@ -45,13 +45,14 @@ class Ticketsystem {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 
-			}
+			} 
+		}
 			availableTicet = this.availableTicet - numberOfSeates;
 			System.out.println(
 					"Booked " + numberOfSeates + "  " + "know the available ticket is the:= " + this.availableTicet);
 			notify();
 
-		}
+		
 	}
 
 	public synchronized void cancleTicket(int cancleTicket) {
